@@ -25,4 +25,4 @@ The script will collect your credentials and create a new micro EC2 instance. It
 
 
 <h3>Author:</h3>
-@taufique786
+@taufiquenoorani
