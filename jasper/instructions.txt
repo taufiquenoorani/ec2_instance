@@ -1,0 +1,29 @@
+Installation:
+
+1) Clone the repo
+2) Create a Slack bot user if you don't have one yet, and copy the API Token (https://my.slack.com/services/new/bot)
+3) On you VM, run export SLACK_BOT_TOKEN="your-api-token"
+4) Run bot_id.py to get the BOT_ID
+5) Run export BOT_ID="your-bot-id"
+6) Change aws_access_key_id and aws_secret_access_key in jasper.py
+7) Run jasper.py
+8) Invite jasper into the channel
+
+Prerequisites:
+
+Python 2+
+pip install (slackclient, boto)
+
+Commands:
+
+It's easy to add your own commands. You can use boto module for managing AWS environment.
+The commands supported are:
+
+help (shows the command supported)
+create (create new EC2 instance)
+
+Usage:
+@jasper create <ami_id> <instance_type> <key_pair> <link to the file you want to upload to remote host (i.e S3 link)>
+
+Author:
+@taufique786
